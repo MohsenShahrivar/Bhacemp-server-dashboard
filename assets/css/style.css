@@ -1,0 +1,370 @@
+/*
+
+
+Color Codes
+
+Blue : #0dada7
+Black : #16171f
+Orange : #c7630a
+Purple : #aa004c
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body, body input, body textarea {
+    font-family: "KoHo", Poppins;
+}
+
+#map {
+    height: 100%;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+    color: #feffff;
+}
+
+.color-blue {
+    color: #0dada7 !important;
+}
+.color-blblue {
+    color: #191c26 !important;
+}
+.color-black {
+    color: #16171f !important;
+}
+.color-orange {
+    color: #c7630a !important;
+}
+.color-purple {
+    color: #aa004c !important;
+}
+.color-red {
+    color: red !important;
+}
+
+.bg-color-blue {
+    background-color: #0dada7 !important;
+}
+.bg-color-blblue {
+    background-color: #191c26 !important;
+}
+.bg-color-black {
+    background-color: #16171f !important;
+}
+.bg-color-orange {
+    background-color: #c7630a !important;
+}
+.bg-color-purple {
+    background-color: #aa004c !important;
+}
+.bg-color-red {
+    background-color: red !important;
+}
+.bg-none {
+    background: none !important;
+}
+
+
+.on-hover-bg-color-blue:hover {
+    background-color: #0dada7 !important;
+}
+.on-hover-bg-color-black:hover {
+    background-color: #16171f !important;
+}
+.on-hover-bg-color-orange:hover {
+    background-color: #c7630a !important;
+}
+.on-hover-bg-color-purple:hover {
+    background-color: #aa004c !important;
+}
+
+.font-weight-100 {
+    font-weight: 100;
+}
+.font-weight-300 {
+    font-weight: 300;
+}
+.font-weight-500 {
+    font-weight: 500;
+}
+.font-weight-700 {
+    font-weight: 700;
+}
+.font-weight-900 {
+    font-weight: 900;
+}
+
+
+.rounded-right-top {
+    border-top-right-radius: 15px;
+}
+.rounded-left-top {
+    border-top-left-radius: 15px;
+}
+.rounded-right-bottom {
+    border-bottom-right-radius: 15px;
+}
+.rounded-right-bottom {
+    border-bottom-right-radius: 15px;
+}
+
+.border-radius-5 {
+    border-radius: 5px;
+}
+.border-radius-10 {
+    border-radius: 10px;
+}
+.border-radius-15 {
+    border-radius: 15px;
+}
+.border-radius-20 {
+    border-radius: 20px;
+}
+.border-radius-25 {
+    border-radius: 25px;
+}
+.border-radius-30 {
+    border-radius: 30px;
+}
+.border-radius-40 {
+    border-radius: 40px;
+}
+
+
+.dot-10 {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-5 {
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-6 {
+    height: 6px;
+    width: 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-7 {
+    height: 7px;
+    width: 7px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-8 {
+    height: 8px;
+    width: 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-25 {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-15 {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-20 {
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+
+.progress {
+    width: 100px;
+    height: 100px !important;
+    float: none;
+    line-height: 50px;
+    background: none;
+    margin: 20px;
+    box-shadow: none;
+    position: relative;
+    top: -10px;
+}
+
+.progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1
+}
+
+.progress .progress-left {
+    left: 0
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    top: 0
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left
+}
+
+.progress .progress-right {
+    right: 0
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-180 1.8s linear forwards
+}
+
+.progress .progress-value {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #000;
+    font-size: 24px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%
+}
+
+.progress.blue .progress-bar {
+    border-color: #0dada7
+}
+
+.progress.blue .progress-left .progress-bar {
+    animation: loading-135 1.5s linear forwards 1.8s
+}
+
+@keyframes loading-180 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+}
+
+@keyframes loading-60 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(60deg);
+        transform: rotate(60deg)
+    }
+}
+
+@keyframes loading-135 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg)
+    }
+}
+
+@keyframes loading-25 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(25deg);
+        transform: rotate(25deg)
+    }
+}
+
+@keyframes loading-90 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg)
+    }
+}
+
+@keyframes loading-45 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg)
+    }
+}
+
+@keyframes loading-360 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
