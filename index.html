@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=KoHo|Poppins">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--<link rel="stylesheet" href="assets/css/rtl.css">-->
+
+</head>
+<body class="text-white bg-color-black">
+
+<div class="main-container d-flex overflow-hidden position-relative w-100" data="cotainer">
+
+    <div id="side" class="col-md-12 col-lg-3 col-xl-3 col-12 h-100 d-none d-lg-block" style="min-height: 100vh; min-width: 200px;">
+
+        <div class="user-profile d-flex row w-100 m-0 p-0 justify-content-center">
+
+            <div id="logo" class="w-100 d-flex justify-content-center align-items-center row position-relative p-lg-3 p-xl-4 p-md-2 p-sm-2 pt-sm-3 pt-md-3 pt-lg-3 pt-3">
+                <div class="col-2 d-flex justify-content-center p-0">
+                    <span class="material-icons col-2 text-right pr-5 h2 m-0" style="">gpp_good</span>
+                </div>
+                <span class="col-8 ps-3 pt-0 pe-0 pb-0 h2 m-0 font-weight-900">Bhacemp.</span>
+            </div>
+
+            <div id="profile" class="w-100 row mt-3">
+                <div id="profile-picture" class="col-12 d-flex justify-content-center position-relative">
+                    
+                    <div class="d-flex justify-content-center">
+                        <img class="rounded-circle" src="media/img/Profile-Pic.jpg" alt="Profile Picture" height="80px" width="80px" style="">
+                    </div>
+                    
+                    <div class="progress blue position-absolute m-0">
+
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        
+                    </div>
+
+                    <div class="originallity-person position-absolute w-100 d-flex justify-content-center shadow-lg" style="left: 20px; z-index: 5; bottom: -10px;">
+                        <span class="material-icons">check_circle</span>
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex-column">
+                    <h6 id="user-fullname" class="w-100 text-center mt-4">Melissa Sanders</h6>
+                    <div class="online-status d-flex justify-content-center position-relative">
+
+                        <div class="position-relative align-items-center d-flex">
+                            <span class="dot-10 bg-color-blue position-absolute" style="left: 0;"></span>
+                            <span class="ps-3">Online</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <nav id="main-navigation" class="d-flex flex-column mt-4">
+
+            <div class="nav-container">
+                <h3 class="w-100 h3 ps-5 font-weight-medium mb-4">Main Navigation</h3>
+
+                <a href="#" class="mb-1 ps-5 p-3 option-1 d-flex active bg-color-blue align-items-center rounded-right-bottom rounded-right-top font-weight-700">
+                    <span class="material-icons me-2">home</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#" class="mb-1 ps-5 p-3 option-2 d-flex align-items-center rounded-right-bottom rounded-right-top on-hover-bg-color-blue font-weight-500">
+                    <span class="material-icons me-2">language</span>
+                    <span>Site Management</span>
+                </a>
+
+                <a href="#" class="mb-1 ps-5 p-3 option-3 d-flex align-items-center rounded-right-bottom rounded-right-top on-hover-bg-color-blue font-weight-500">
+                    <span class="material-icons me-2">data_usage</span>
+                    <span>Site Analytics</span>
+                </a>
+
+                <a href="#" class="mb-1 ps-5 p-3 option-4 d-flex align-items-center rounded-right-bottom rounded-right-top on-hover-bg-color-blue font-weight-500">
+                    <span class="material-icons me-2">airplay</span>
+                    <span>Maintenance</span>
+                </a>
+
+                <a href="#" class="mb-1 ps-5 p-3 option-5 d-flex align-items-center rounded-right-bottom rounded-right-top on-hover-bg-color-blue font-weight-500">
+                    <span class="material-icons me-2">settings_input_hdmi</span>
+                    <span>Configuration</span>
+                </a>
+
+                <a href="#" class="mb-1 ps-5 p-3 option-6 d-flex align-items-center rounded-right-bottom rounded-right-top on-hover-bg-color-blue font-weight-500">
+                    <span class="material-icons me-2">settings</span>
+                    <span>Setting</span>
+                </a>
+                <a href="#" class="mb-1 ps-5 p-3 option-7 d-flex align-items-center rounded-right-bottom rounded-right-top on-hover-bg-color-blue font-weight-500">
+                    <span class="material-icons me-2">logout</span>
+                    <span>Logout</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+    <div id="content" class="col-md-12 col-lg-9 col-xl-9 col-12 h-100 position-relative m-0 p-0" style="min-height: 100vh;">
+
+        <header class="row pt-3 m-0">
+            <div id="search" class="col-6 position-relative p-0 d-flex align-items-center m-0">
+                    <span class="material-icons position-absolute font-weight-100 h3 m-0 p-0" style="left: 10px;">search</span>
+                    <input type="search" placeholder="search..." class="form-control bg-color-black ps-5 shadow-none text-light p-2 m-0 w-100" style="border: none !important;">
+            </div>
+
+            <div id="header-buttons" class="col-6 p-0 align-items-center d-flex justify-content-end pe-3">
+
+                <button class="text-light h-100 mx-md-2 mx-lg-3 mx-2 p-0 d-flex align-items-center position-relative" style="background: none; border:none;">
+                    <span class="material-icons">notifications_none</span>
+                    <span class="dot-7 bg-color-red position-absolute" style="right: 15%; top: 30%;"></span>
+                </button>
+
+                <button class="text-light h-100 mx-md-2 mx-lg-3 mx-2 p-0 d-flex align-items-center position-relative" style="background: none; border:none;">
+                    <span class="material-icons">insights</span>
+                    <span class="dot-7 bg-color-red position-absolute" style="right: 15%; top: 30%;"></span>
+                </button>
+
+                <button class="text-light h-100 mx-md-2 mx-lg-3 mx-2 p-0 d-flex align-items-center position-relative" style="background: none; border:none;">
+                    <span class="material-icons">settings</span>
+                </button>
+
+            </div>
+        </header>
+
+        <main class="row col-12 m-0 justify-content-center">
+
+            <div id="overview-section" class="row p-0 col-12 justify-content-center mt-3 sec-1">
+
+                <div id="main-chart-section" class="col-12 col-md-6 row p-0 justify-content-around">
+
+                    <div class="col-12 mb-3 d-flex align-items-center">
+                        <span class="h3 d-inline">Statistics Overview</span>
+                        <span class="d-inline ms-2 bg-color-blue px-2 py-1 border-radius-5 h6">20 Active Server</span>
+                    </div>
+
+                    <div id="memory-chart-section" class="col-lg-5 col-12 col-sm-8 mx-auto my-2">
+                        <div class="p-4 row bg-color-blblue border-radius-10">
+                            <div class="chart-content col-6 p-0">
+
+                                <h4 class="h3">100 TB</h4>
+                                <h3 class="h6">Memory</h3>
+
+                                <div class="mt-5 d-flex align-items-center">
+                                    <span class="dot-8 me-2 m-0 bg-color-red"></span>
+                                    <span class="text-danger m-0 font-weight-700">3.64%</span>
+                                </div>
+
+                            </div>
+                            <div class="col-6 p-0">
+                                <div id="memory-chart" class="w-100 google-chart"></div>
+                            </div>
+                        </div>
+                    </div> <!--#memory-chart-section-->
+
+                    <div id="logouts-chart-section" class="col-lg-5 col-12 col-sm-8 mx-auto my-2">
+                        <div class="p-4 row bg-color-blblue border-radius-10">
+                            <div class="chart-content col-6 p-0">
+
+                                <h4 class="h3">5720</h4>
+                                <h3 class="h6">Logouts</h3>
+
+                                <div class="mt-5 d-flex align-items-center">
+                                    <span class="dot-8 me-2 m-0 bg-success"></span>
+                                    <span class="text-success m-0 font-weight-700">3.64%</span>
+                                </div>
+
+                            </div>
+                            <div class="col-6 p-0">
+                                <div id="logouts-chart" class="w-100 google-chart"></div>
+                            </div>
+                        </div>
+                    </div> <!--#logouts-chart-section-->
+
+                    <div id="signups-chart-section" class="col-lg-5 col-12 col-sm-8 mx-auto my-2">
+                        <div class="p-4 row bg-color-blblue border-radius-10">
+                            <div class="chart-content col-6 p-0">
+
+                                <h4 class="h3">1610</h4>
+                                <h3 class="h6">Sign ups</h3>
+
+                                <div class="mt-5 d-flex align-items-center">
+                                    <span class="dot-8 me-2 m-0 bg-success"></span>
+                                    <span class="text-success m-0 font-weight-700">0.24%</span>
+                                </div>
+
+                            </div>
+                            <div class="col-6 p-0">
+                                <div id="signups-chart" class="w-100 google-chart"></div>
+                            </div>
+                        </div>
+                    </div> <!--#signups-chart-section-->
+
+                    <div id="signouts-chart-section" class="col-lg-5 col-12 col-sm-8 mx-auto my-2">
+                        <div class="p-4 row bg-color-blblue border-radius-10">
+                            <div class="chart-content col-6 p-0">
+
+                                <h4 class="h3">2790</h4>
+                                <h3 class="h6">Sign outs</h3>
+
+                                <div class="mt-5 d-flex align-items-center">
+                                    <span class="dot-8 me-2 m-0 bg-color-red"></span>
+                                    <span class="text-danger m-0 font-weight-700">1.48%</span>
+                                </div>
+
+                            </div>
+                            <div class="col-6 p-0">
+                                <div id="signouts-chart" class="w-100 google-chart"></div>
+                            </div>
+                        </div>
+                    </div> <!--#signouts-chart-section-->
+
+                </div> <!-- #main-chart-section-->
+
+                <div id="server-security-section" class="row col-12 col-md-6 d-flex align-items-start my-4 my-lg-0">
+                    <header class="col-12">
+                        <h2 class="d-block">Server Security</h2>
+                        <div class="d-flex justify-content-start align-items-center mb-3">
+                            <span class="d-flex justify-content-start align-items-center">
+                                <span class="dot-10 bg-danger"></span>
+                                <span style="font-size: 11px;" class="ms-1 me-3">Malware</span>
+                            </span>
+                            <span class="d-flex justify-content-start align-items-center">
+                                <span class="dot-10 bg-warning"></span>
+                                <span style="font-size: 11px;" class="ms-1 me-3">Phidhing</span>
+                            </span>
+                            <span class="d-flex justify-content-start align-items-center">
+                                <span class="dot-10 bg-success"></span>
+                                <span style="font-size: 11px;" class="ms-1 me-3">Exploit</span>
+                            </span>
+                        </div>
+                    </header>
+
+                    <div id="server-map" class="col-12 p-0">
+                        <img src="media/img/Map.png" alt="Server Map" class="w-100">
+                    </div>
+                </div> <!-- #server-security-section-->
+
+            </div> <!--#overview-section-->
+
+            <div id="report-section" class="sec-2 row p-0 col-12 w-100 mt-3 justify-content-around">
+
+                <div id="server-request-section" class="col-xl-8 col-12 row justify-content-center mb-xl-0 mb-4">
+                    <div class="row col-12 bg-color-blblue p-4 border-radius-10 justify-content-center">
+                        <header class="col-12 p-0">
+                            <span class="h4">Server Request</span>
+                        </header>
+
+                        <div class="col-12 p-0">
+                            <div id="server-request-chart" class="w-100 google-chart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="client-side-full-page-load" class="col-xl-4 col-12 row justify-content-center mb-xl-0 mb-4">
+                    <div class="row col-12 bg-color-blblue p-4 border-radius-10 justify-content-center">
+                        <header class="col-12 p-0">
+                            <span class="h4">Client Side Full Page Load</span>
+                        </header>
+
+                        <div class="col-12 p-0">
+                            <div id="client-side-fullpage-load-chart" style=""></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!--#report-section-->
+
+            <div id="active-server-section" class="mt-3 row col-12 m-0 p-3 justify-content-center">
+                <div class="row col-12 p-4 bg-color-blblue" style="overflow-x: auto; !important;">
+                    <header>
+                        <h2 class="h5 mb-4">Active Server</h2>
+                    </header>
+
+                    <table class="table text-light text-center" style="min-width: 800px;">
+                        <thead>
+                            <tr>
+                                <th scope="col">Country Location</th>
+                                <th scope="col">Domain Name</th>
+                                <th scope="col">Storage</th>
+                                <th scope="col">Server Status</th>
+                                <th scope="col">Page Load</th>
+                                <th scope="col">Signal</th>
+                                <th scope="col">Document Report</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="py-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img src="assets/country-icons/185-indonesia.svg" alt="Indonesia Flag" class="dot-25 me-2">
+                                        <span>Indonesia</span>
+                                    </div>
+                                </th>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <a href="https://google.com" target="_blank" class="color-blue h6 h-100">https://google.com</a>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <span class="h6">12 TB</span>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <span class="h6 bg-color-red py-1 px-2 border-radius-5 color-black font-weight-900">DOWN</span>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <span class="h6 color-blue">2.0 ms</span>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <span class="material-icons" style="opacity: .3;">signal_cellular_null</span>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="material-icons h3 m-0 me-2" style="">picture_as_pdf</span>
+                                        <span style="font-size: 12px;">20210225.pdf</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="py-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img src="assets/country-icons/200-iran.svg" alt="Iran Flag" class="dot-25 me-2">
+                                        <span>Rep. Isl. Iran</span>
+                                    </div>
+                                </th>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <a href="https://worldwillweb.com" target="_blank" class="color-blue h6 h-100">https://worldwillweb.com</a>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <span class="h6">800 TB</span>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <span class="h6 bg-warning py-1 px-2 border-radius-5 color-black font-weight-900">TROUBLE</span>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <span class="h6 color-blue">3.0 ms</span>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <span class="material-icons" style="opacity: .6;">signal_cellular_connected_no_internet_0_bar</span>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="material-icons h3 m-0 me-2" style="">picture_as_pdf</span>
+                                        <span style="font-size: 12px;">20210903.pdf</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="">
+                                <th scope="row" class="py-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img src="assets/country-icons/177-american%20samoa.svg" alt="USA Flag" class="dot-25 me-2">
+                                        <span>United States</span>
+                                    </div>
+                                </th>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <a href="https://amazon.com" target="_blank" class="color-blue h6 h-100">https://amazon.com</a>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <span class="h6">1000 TB</span>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <span class="h6 bg-success py-1 px-2 border-radius-5 color-black font-weight-900">ACTIVE</span>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <span class="h6 color-blue">1.75 ms</span>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div>
+                                        <span class="material-icons" style="opacity: .9;">signal_cellular_0_bar</span>
+                                    </div>
+                                </td>
+                                <td class="text-left py-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <span class="material-icons h3 m-0 me-2" style="">picture_as_pdf</span>
+                                        <span style="font-size: 12px;">20200118.pdf</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> <!--#active-server-section-->
+
+        </main>
+
+    </div>
+
+</div> <!-- .main-container -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
